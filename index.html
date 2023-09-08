@@ -6,11 +6,11 @@
     --mouseY: 0;
   }
     .Square{
-        width: var(--mouseX);
+        width: 100px;
         position:absolute;
-        height: var(--mouseY);
-        right: calc(50% - 25px);
-        top: calc(50% - 50px);
+        height: 100px;
+        right: var(--mouseX);
+        top: var(--mouseY);
         animation-name: rainbow;
     animation-duration:10s;
     animation-iteration-count: infinite;
