@@ -1,5 +1,10 @@
 <!DOCTYPE HTML>
 <style>
+  :root
+  {
+    --mouseX: 0;
+    --mouseY: 0;
+  }
     .Square{
         width: var(--mouseX);
         position:absolute;
@@ -21,6 +26,12 @@
 }
 </style>
 <script>
+  let root = document.documentElement;
+
+root.addEventListener("mousemove", e => {
+  root.style.setProperty('--mouseXe', e.clientX + "px");
+  root.style.setProperty('--mouseY', e.clientY + "px");
+});
    function alert()
    {
     alert("You found me")
