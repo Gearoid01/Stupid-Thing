@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <style>
     .Square{
-        width: y;
+        width: mouseX;
         position:absolute;
-        height: x;
+        height: mouseY;
         right: calc(50% - 25px);
         top: calc(50% - 50px);
         animation-name: rainbow;
@@ -19,8 +19,17 @@
   83.33% {background-color: rgb(255, 0, 255);}
   100% {background-color: rgb(255, 0, 0);}
 }
-
 </style>
+<script>
+   function alert()
+   {
+    alert("You found me")
+   }
+   let mouseX = event.mouseX
+   let mouseY = event.mouseY
+
+
+</script>
 <html>
 <div class="Square"></div>
 </html>
