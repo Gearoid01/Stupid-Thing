@@ -30,7 +30,7 @@
 
 root.addEventListener("mousemove", e => {
   root.style.setProperty('--mouseX', e.clientX + "px");
-  root.style.setProperty('--mouseY', calc(e.clientY * -1) + "px");
+  root.style.setProperty('--mouseY', calc(e.clientY * -1 + "px" * -1));
 });
    function alert()
    {
