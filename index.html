@@ -4,11 +4,13 @@
   {
     --mouseX: 50%;
     --mouseY: 50%;
+    --squareWidth: 70px;
+    --squareHeight: 70px;
   }
     .Square{
-        width: 100px;
+        width: var(--mouseX);
         position:absolute;
-        height: 100px;
+        height: var(--mouseY);
         left: calc(var(--mouseX) - 50px);
         top: calc( calc(var(--mouseY) * -1) - 50px);
         animation-name: rainbow;
@@ -28,7 +30,7 @@
 <script>
   let root = document.documentElement;
 
-root.addEventListener("mousemove", e => {
+    root.addEventListener("mousemove", e => {
   root.style.setProperty('--mouseX', e.clientX + "px");
   root.style.setProperty('--mouseY', -e.clientY + "px");
 });
