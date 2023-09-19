@@ -30,12 +30,11 @@
 <script>
   let root = document.documentElement;
 
-    //root.addEventListener("mousemove", e => {
-      while(true)
-      {
+  root.addEventListener("mousemove", e => {
+
   root.style.setProperty('--mouseX', e.clientX + "px");
   root.style.setProperty('--mouseY', -e.clientY + "px");
-}/*)*/;
+});
    function alert()
    {
     alert("You found me");
