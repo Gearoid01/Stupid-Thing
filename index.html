@@ -30,7 +30,9 @@
 <script>
   let root = document.documentElement;
 
-    root.addEventListener("mousemove", e => {
+    //root.addEventListener("mousemove", e => {
+      while(true)
+      {
   root.style.setProperty('--mouseX', e.clientX + "px");
   root.style.setProperty('--mouseY', -e.clientY + "px");
 });
